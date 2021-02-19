@@ -6,7 +6,7 @@ import re
 
 
 def plot_bench_result(
-    dataset_names, baseline_results, tvm_results, algo_name, title=""
+    dataset_names, baseline_results, tvm_results, algo_name, tvm_label, title=""
 ):
     sns.set()
     sns.set_style("whitegrid")
@@ -16,7 +16,7 @@ def plot_bench_result(
     ax = fig.add_subplot(1, 1, 1)
     x_position = np.arange(len(dataset_names))
     ax.bar(x_position, baseline_results / tvm_results, width=0.4, label=algo_name)
-    ax.bar(x_position + 0.4, np.ones((len(tvm_results))), width=0.4, label="tvm-cpu")
+    ax.bar(x_position + 0.4, np.ones((len(tvm_results))), width=0.4, label=tvm_label)
     ax.legend()
     ax.set_xticks(x_position + 0.2)
     ax.set_xticklabels(dataset_names)
@@ -26,7 +26,7 @@ def plot_bench_result(
     # plt.show()
 
 
-def do_plot(result_file, baseline, dataset_names, title):
+def do_plot(result_file, baseline, dataset_names, title, tvm_label):
     with open(result_file, "r") as f:
         result = json.load(f)
 
@@ -45,6 +45,7 @@ def do_plot(result_file, baseline, dataset_names, title):
         np.array(baseline_results),
         np.array(tvm_results),
         algo_name_labels[baseline],
+        tvm_label,
         title,
     )
 
@@ -52,9 +53,9 @@ def do_plot(result_file, baseline, dataset_names, title):
 def plot_cpu():
     dataset_names = ["fraud", "epsilon", "year", "covtype", "higgs"]
     for result_file in ["result-cpu-500-8-10000.json", "result-cpu-500-8-50000.json"]:
-        ntrees, maxdepth, batch = [int(i) for i in re.findall(r'\d+', result_file)]
+        ntrees, maxdepth, batch = [int(i) for i in re.findall(r"\d+", result_file)]
         title = "batch={},ntrees={},maxdepth={}".format(batch, ntrees, maxdepth)
-        do_plot(result_file, "rf", dataset_names, title)
+        do_plot(result_file, "rf", dataset_names, title, "tvm_cpu")
 
 
 def plot_gpu():
@@ -64,9 +65,9 @@ def plot_gpu():
         "result-gpu-500-8-1000.json",
         "result-gpu-500-8-10000.json",
     ]:
-        ntrees, maxdepth, batch = [int(i) for i in re.findall(r'\d+', result_file)]
+        ntrees, maxdepth, batch = [int(i) for i in re.findall(r"\d+", result_file)]
         title = "batch={},ntrees={},maxdepth={}".format(batch, ntrees, maxdepth)
-        do_plot(result_file, "xgb", dataset_names, title)
+        do_plot(result_file, "xgb", dataset_names, title, "tvm_gpu")
 
 
 plot_cpu()
