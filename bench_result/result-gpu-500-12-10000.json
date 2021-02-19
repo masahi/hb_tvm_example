@@ -1,0 +1,58 @@
+{
+  "fraud": {
+    "xgb": {
+      "train_time": "3.006498766999357",
+      "train_accuracy": "{'Accuracy': 0.9996, 'Log_Loss': 0.004615043976241213, 'AUC': 0.8845653195307747, 'Precision': 0.9090909090909091, 'Recall': 0.7692307692307693}",
+      "prediction_time": 0.0050815404693840185,
+      "peak_mem": 709.76953125,
+      "hb-tvm": {
+        "conversion_time": "24.918895064000026",
+        "prediction_time": "0.00802727388781932",
+        "peak_mem": "2544.3203125",
+        "is_same_output": true
+      }
+    }
+  },
+  "year": {
+    "xgb": {
+      "train_time": "34.9808047839997",
+      "train_accuracy": "{'MeanAbsError': 6.133362463378906, 'MeanSquaredError': 76.68668648026734, 'MedianAbsError': 4.2474365234375}",
+      "prediction_time": 0.017793492550852684,
+      "peak_mem": 2678.94140625,
+      "hb-tvm": {
+        "conversion_time": "45.38834177699937",
+        "prediction_time": "0.013526241377580938",
+        "peak_mem": "4328.76953125",
+        "is_same_output": true
+      }
+    }
+  },
+  "covtype": {
+    "xgb": {
+      "train_time": "157.4692395660004",
+      "train_accuracy": "{'Accuracy': 0.9585, 'Precision': 0.9585401787165833, 'Recall': 0.9585, 'F1': 0.9583918655106829}",
+      "prediction_time": 0.05845784380616518,
+      "peak_mem": 4341.94921875,
+      "hb-tvm": {
+        "conversion_time": "191.41803605300083",
+        "prediction_time": "0.35709994204084144",
+        "peak_mem": "4343.35546875",
+        "is_same_output": true
+      }
+    }
+  },
+  "higgs": {
+    "xgb": {
+      "train_time": "137.34254458500072",
+      "train_accuracy": "{'Accuracy': 0.7408, 'Log_Loss': 2.984157688558271, 'AUC': 0.7303733440385387, 'Precision': 0.6969168121000582, 'Recall': 0.9041509433962264}",
+      "prediction_time": 0.007727076234598881,
+      "peak_mem": 5509.41796875,
+      "hb-tvm": {
+        "conversion_time": "28.46227258500039",
+        "prediction_time": "0.003997554714297454",
+        "peak_mem": "6546.92578125",
+        "is_same_output": true
+      }
+    }
+  }
+}

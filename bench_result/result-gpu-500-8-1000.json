@@ -1,0 +1,50 @@
+{
+  "fraud": {
+    "xgb": {
+      "prediction_time": 0.0020355240000234126,
+      "peak_mem": 693.15625,
+      "hb-tvm": {
+        "conversion_time": "2.9640762879998874",
+        "prediction_time": "0.0004967543673232359",
+        "peak_mem": "961.84375",
+        "is_same_output": true
+      }
+    }
+  },
+  "year": {
+    "xgb": {
+      "prediction_time": 0.00452710365307583,
+      "peak_mem": 1151.87109375,
+      "hb-tvm": {
+        "conversion_time": "21.242779805999817",
+        "prediction_time": "0.0005251107449279219",
+        "peak_mem": "1414.9921875",
+        "is_same_output": true
+      }
+    }
+  },
+  "covtype": {
+    "xgb": {
+      "prediction_time": 0.018681399336688925,
+      "peak_mem": 1375.80078125,
+      "hb-tvm": {
+        "conversion_time": "35.37936125400029",
+        "prediction_time": "0.005047274459174128",
+        "peak_mem": "3261.16796875",
+        "is_same_output": true
+      }
+    }
+  },
+  "higgs": {
+    "xgb": {
+      "prediction_time": 0.003903976183674062,
+      "peak_mem": 4474.5859375,
+      "hb-tvm": {
+        "conversion_time": "23.467909562000386",
+        "prediction_time": "0.00047412432656658766",
+        "peak_mem": "4478.203125",
+        "is_same_output": true
+      }
+    }
+  }
+}

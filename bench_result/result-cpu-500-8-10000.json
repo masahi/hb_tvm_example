@@ -1,0 +1,252 @@
+{
+  "fraud": {
+    "rf": {
+      "prediction_time": 0.22149814772422602,
+      "peak_mem": 366.453125,
+      "onnx-ml": {
+        "conversion_time": "2.8487890449978295",
+        "prediction_time": "0.06726492776534561",
+        "peak_mem": "447.05859375",
+        "is_same_output": false
+      },
+      "hb-tvm": {
+        "conversion_time": "6.237040361003892",
+        "prediction_time": "0.02917194363314537",
+        "peak_mem": "1394.328125",
+        "is_same_output": true
+      }
+    },
+    "lgbm": {
+      "prediction_time": 0.0651407507862967,
+      "peak_mem": 1395.95703125,
+      "onnx-ml": {
+        "conversion_time": "2.624177083001996",
+        "prediction_time": "0.07460685357148819",
+        "peak_mem": "1406.15234375",
+        "is_same_output": true
+      },
+      "hb-tvm": {
+        "conversion_time": "5.3521313249948435",
+        "prediction_time": "0.03189434284738999",
+        "peak_mem": "2314.62109375",
+        "is_same_output": true
+      }
+    },
+    "xgb": {
+      "prediction_time": 0.03820441529610342,
+      "peak_mem": 2316.390625,
+      "onnx-ml": {
+        "conversion_time": "0.832988028996624",
+        "prediction_time": "0.1758486069288201",
+        "peak_mem": "2243.046875",
+        "is_same_output": true
+      },
+      "hb-tvm": {
+        "conversion_time": "5.2436641750027775",
+        "prediction_time": "0.03251119735714569",
+        "peak_mem": "3251.9140625",
+        "is_same_output": true
+      }
+    }
+  },
+  "epsilon": {
+    "rf": {
+      "prediction_time": 0.33829249454089333,
+      "peak_mem": 4716.953125,
+      "onnx-ml": {
+        "conversion_time": "7.71718515700195",
+        "prediction_time": "0.1973981986427264",
+        "peak_mem": "4763.30859375",
+        "is_same_output": true
+      },
+      "hb-tvm": {
+        "conversion_time": "6.898587641000631",
+        "prediction_time": "0.07550791091823472",
+        "peak_mem": "5577.01953125",
+        "is_same_output": false
+      }
+    },
+    "lgbm": {
+      "prediction_time": 0.10798117998957442,
+      "peak_mem": 5504.86328125,
+      "onnx-ml": {
+        "conversion_time": "10.55818817999534",
+        "prediction_time": "0.17209147774523517",
+        "peak_mem": "5534.96484375",
+        "is_same_output": false
+      },
+      "hb-tvm": {
+        "conversion_time": "9.794046399998479",
+        "prediction_time": "0.07788391450030387",
+        "peak_mem": "6633.33203125",
+        "is_same_output": false
+      }
+    },
+    "xgb": {
+      "prediction_time": 0.2496847684991995,
+      "peak_mem": 6709.62890625,
+      "onnx-ml": {
+        "conversion_time": "8.489802180003608",
+        "prediction_time": "0.256070216714297",
+        "peak_mem": "6408.86328125",
+        "is_same_output": true
+      },
+      "hb-tvm": {
+        "conversion_time": "20.837341106001986",
+        "prediction_time": "0.07805271705127576",
+        "peak_mem": "7636.9375",
+        "is_same_output": true
+      }
+    }
+  },
+  "year": {
+    "rf": {
+      "prediction_time": 0.3204543351429474,
+      "peak_mem": 6041.1015625,
+      "onnx-ml": {
+        "conversion_time": "14.772059133996663",
+        "prediction_time": "0.09207760428599075",
+        "peak_mem": "6117.671875",
+        "is_same_output": true
+      },
+      "hb-tvm": {
+        "conversion_time": "6.475209789998189",
+        "prediction_time": "0.031201366296175235",
+        "peak_mem": "7130.9296875",
+        "is_same_output": false
+      }
+    },
+    "lgbm": {
+      "prediction_time": 0.09960217728550969,
+      "peak_mem": 7130.7109375,
+      "onnx-ml": {
+        "conversion_time": "17.586899050002103",
+        "prediction_time": "0.09266080677643541",
+        "peak_mem": "7152.73828125",
+        "is_same_output": true
+      },
+      "hb-tvm": {
+        "conversion_time": "8.490160317000118",
+        "prediction_time": "0.03342281562235796",
+        "peak_mem": "7857.55859375",
+        "is_same_output": true
+      }
+    },
+    "xgb": {
+      "prediction_time": 0.07608369201046358,
+      "peak_mem": 7857.0625,
+      "onnx-ml": {
+        "conversion_time": "6.901157128995692",
+        "prediction_time": "0.20309727380603992",
+        "peak_mem": "7808.46484375",
+        "is_same_output": true
+      },
+      "hb-tvm": {
+        "conversion_time": "19.874925420997897",
+        "prediction_time": "0.0332999107241096",
+        "peak_mem": "8793.484375",
+        "is_same_output": true
+      }
+    }
+  },
+  "covtype": {
+    "rf": {
+      "prediction_time": 0.36831541655073474,
+      "peak_mem": 8697.6015625,
+      "onnx-ml": {
+        "conversion_time": "23.282729427002778",
+        "prediction_time": "0.1139802639087548",
+        "peak_mem": "8839.93359375",
+        "is_same_output": true
+      },
+      "hb-tvm": {
+        "conversion_time": "6.363823145999049",
+        "prediction_time": "0.040854200877739846",
+        "peak_mem": "9587.828125",
+        "is_same_output": false
+      }
+    },
+    "lgbm": {
+      "prediction_time": 0.7143550061530045,
+      "peak_mem": 9592.78515625,
+      "onnx-ml": {
+        "conversion_time": "66.65453264900134",
+        "prediction_time": "1.2793167319903993",
+        "peak_mem": "9767.40234375",
+        "is_same_output": true
+      },
+      "hb-tvm": {
+        "conversion_time": "32.69678765799472",
+        "prediction_time": "0.24398442093846898",
+        "peak_mem": "10037.02734375",
+        "is_same_output": true
+      }
+    },
+    "xgb": {
+      "prediction_time": 0.4743208095000858,
+      "peak_mem": 10036.7890625,
+      "onnx-ml": {
+        "conversion_time": "24.591553862999717",
+        "prediction_time": "1.3926369145509463",
+        "peak_mem": "9639.609375",
+        "is_same_output": true
+      },
+      "hb-tvm": {
+        "conversion_time": "43.817760973004624",
+        "prediction_time": "0.24073588851054095",
+        "peak_mem": "10038.9921875",
+        "is_same_output": true
+      }
+    }
+  },
+  "higgs": {
+    "rf": {
+      "prediction_time": 0.5046254536737622,
+      "peak_mem": 9494.390625,
+      "onnx-ml": {
+        "conversion_time": "7.525396706994798",
+        "prediction_time": "0.13064654091817365",
+        "peak_mem": "9520.3125",
+        "is_same_output": true
+      },
+      "hb-tvm": {
+        "conversion_time": "6.445956949995889",
+        "prediction_time": "0.03083946020394381",
+        "peak_mem": "10163.32421875",
+        "is_same_output": false
+      }
+    },
+    "lgbm": {
+      "prediction_time": 0.09428955348014323,
+      "peak_mem": 10163.41015625,
+      "onnx-ml": {
+        "conversion_time": "11.254172943001322",
+        "prediction_time": "0.12556467806079666",
+        "peak_mem": "10162.81640625",
+        "is_same_output": false
+      },
+      "hb-tvm": {
+        "conversion_time": "9.687202950997744",
+        "prediction_time": "0.03217216439766997",
+        "peak_mem": "10928.48046875",
+        "is_same_output": false
+      }
+    },
+    "xgb": {
+      "prediction_time": 0.07078312719416002,
+      "peak_mem": 10927.98046875,
+      "onnx-ml": {
+        "conversion_time": "7.863900709002337",
+        "prediction_time": "0.21815924379597146",
+        "peak_mem": "10878.52734375",
+        "is_same_output": true
+      },
+      "hb-tvm": {
+        "conversion_time": "18.59309078100341",
+        "prediction_time": "0.0324756758770435",
+        "peak_mem": "11958.57421875",
+        "is_same_output": true
+      }
+    }
+  }
+}
